@@ -14,6 +14,16 @@ School course repo: ICT Security Basics from Trust to Blockchain
    - ie. modelling IED attacks
 
 - CND = Computer Network Defence
+ - Base security decisions and measurements on understanding the adversary
  - Intelligence-driven CND is a risk management strategy 
    > that addresses the threat component of risk, incorporating analysis of adversaries, their capabilities, objectives, doctrine and limitations
-
+ - The basic idea is that in a kill chain model just one mitigation may thwart the adversary -> repetition by adversary must be recognized and leveraged by the defender
+ 
+- Actions against kill chain 
+ 1. Detect
+ 2. Deny
+ 3. Disrupt
+ 4. Degrade
+ 5. Deceive
+ 6. Destroy
+ 
