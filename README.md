@@ -74,4 +74,4 @@ In Australia a disgruntled ex-employee was able to hack into local sewage system
 - The sewage systems used SCADA[^scada] which is not connected to the internet, but sincce the ex-employee knew the configurations and correct frequencies, he was able to do some damage anyway.
 
 
-[^scada]https://en.wikipedia.org/wiki/SCADA
+[^scada]: https://en.wikipedia.org/wiki/SCADA
