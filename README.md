@@ -71,7 +71,7 @@ The episode also went over an IBM related hacking story from the 60s when punch-
 
 In Australia a disgruntled ex-employee was able to hack into local sewage system using radio transmitters and their frequencies to acces pump stations remotely.
 - The ex-employee was caught during the act and was sentenced to 2 years in prison.
-- The sewage systems used SCADA[^1] which is not connected to the internet, but sincce the ex-employee knew the configurations and correct frequencies, he was able to do some damage anyway.
+- The sewage systems used SCADA[^scada] which is not connected to the internet, but sincce the ex-employee knew the configurations and correct frequencies, he was able to do some damage anyway.
 
 
-[^1] https://en.wikipedia.org/wiki/SCADA
+[^scada]https://en.wikipedia.org/wiki/SCADA
