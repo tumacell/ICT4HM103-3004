@@ -58,15 +58,16 @@ School course repo: ICT Security Basics from Trust to Blockchain
 
 #### Tactic
 
-- The reason for performing adversarial actions. For example hackers may want to achieve credential access
+- The reason for performing adversarial actions. For example hackers may want to achieve credential access to a system or destroy the database.
 
 #### Techniques
 
-- The way adversaries achieve their objectives. 
+- The way adversaries achieve their objectives. For example adversaries may use SQL injection or exploit a zero day vulnerability.
 
 #### Procedure
 
-- How specifically adversarial actions are implemented. For example using sudoers file to elevate privileges.
+- How specifically adversarial actions are implemented. For example using sudoers file to elevate privileges to get access. 
+> Thie seems oddly similar to Techniques.
 
 ### Comparing Cyber Kill Chain and ATT&CK
 
