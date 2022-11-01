@@ -138,8 +138,8 @@ In Australia a disgruntled ex-employee was able to hack into local sewage system
 
 | Question | Answer |
 | --- | --- |
-| Host OS | Windows10 |
-| Physical computer used | School laptop |
+| Host OS? | Windows10 |
+| Physical computer used? | School laptop |
 
 [^summary]: https://lockheedmartin.com/content/dam/lockheed-martin/rms/documents/cyber/LM-White-Paper-Intel-Driven-Defense.pdf
 [^osint]: https://osintframework.com/
