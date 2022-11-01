@@ -34,7 +34,7 @@ July 12th Episode (between eps 120 and 121.. did not realize it was actually a g
 <sub> Lapsu$, IBM punch cards, Australian sewage problems.... </sub>
 
 #### Case Lapsu$
-- Group of hackers had  infiltrated Okta security firm's network (or so it was first reported and alleged initially)
+- Group of hackers had infiltrated Okta security firm's network (or so it was first reported and alleged initially)
 - Screenshots posted by the hackers implicated that technical support engineer's account was compromised =>> in the worst case scenario hackers could change passwords, access restricted data etc.
 
 #### Okta's response:
@@ -56,9 +56,8 @@ July 12th Episode (between eps 120 and 121.. did not realize it was actually a g
 
 - But the screenshots that the Lapsu$ provided (fake news about hacking) made a huge impact for Okta's reputation
   - How do you prepare yourself for these sort of attacks with little actual impact but huge impact if it is exaggerated to the public by the hackers wanting to become notorious
-
 - Lapsu$ hackers left a huge digital trail 
-- Their methods were more like that of script kiddies using social engineering, sim swapping rather than technical malware or coding skills.
+- Their methods were more like that of script kiddies[^scriptkids] using social engineering, sim swapping rather than technical malware or coding skills.
 
 #### Other topics
 
@@ -73,5 +72,20 @@ In Australia a disgruntled ex-employee was able to hack into local sewage system
 - The ex-employee was caught during the act and was sentenced to 2 years in prison.
 - The sewage systems used SCADA[^scada] which is not connected to the internet, but sincce the ex-employee knew the configurations and correct frequencies, he was able to do some damage anyway.
 
+### Installing Debian on Virtualbox
 
+- I had already installed VirtualBox to fool around in Windows server environments since I do not have that much experience on it.
+- I downloaded the xfce from [cdimage](https://cdimage.debian.org/images/unofficial/non-free/images-including-firmware/current-live/amd64/iso-hybrid/debian-live-11.5.0-amd64-xfce+nonfree.log).
+- After downloading I used the steps provided by the [teacher](https://terokarvinen.com/2021/install-debian-on-virtualbox/) to install debian
+ - For some reason I had to do some minor changes in the step "Insert Debian ISO Image as a Virtual CDROM", that I think was because of Windows environment
+- You can check screenshots of the steps in the [pics folder](https://github.com/tumacell/ICT4HM103-3004/tree/homework1/pics)
+
+![This is an image of Debain final phase](https://github.com/tumacell/ICT4HM103-3004/tree/homework1/pics/debian14.JPG)
+
+| Question | Answer |
+| --- | --- |
+| Host OS | Windows10 |
+| Physical computer used | School laptop |
+
+[^scriptkids]: https://www.hypr.com/security-encyclopedia/script-kiddie
 [^scada]: https://en.wikipedia.org/wiki/SCADA
