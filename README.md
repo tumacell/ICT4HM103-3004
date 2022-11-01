@@ -80,7 +80,7 @@ In Australia a disgruntled ex-employee was able to hack into local sewage system
  - For some reason I had to do some minor changes in the step "Insert Debian ISO Image as a Virtual CDROM", that I think was because of Windows environment
 - You can check screenshots of the steps in the [pics folder](https://github.com/tumacell/ICT4HM103-3004/tree/homework1/pics)
 
-![This is an image of Debain final phase](https://github.com/tumacell/ICT4HM103-3004/tree/homework1/pics/debian14.JPG)
+![This is an image of Debain final phase](/pics/debian14.JPG)
 
 | Question | Answer |
 | --- | --- |
