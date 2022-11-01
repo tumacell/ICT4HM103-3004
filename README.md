@@ -3,7 +3,9 @@ School course repo: ICT Security Basics from Trust to Blockchain
 
 ## Homework 1: Adversial mindset
 
-### Summary of Hutchins et al 2011
+### Summary of Hutchins et al 2011[^summary]
+
+#### Abstract and Intelligence-driven Computer Network Defense
 
 - Long history for exploiting network vulnerabilities
 - APT = Advanced persistent Threat
@@ -19,7 +21,32 @@ School course repo: ICT Security Basics from Trust to Blockchain
    > that addresses the threat component of risk, incorporating analysis of adversaries, their capabilities, objectives, doctrine and limitations
  - The basic idea is that in a kill chain model just one mitigation may thwart the adversary -> repetition by adversary must be recognized and leveraged by the defender
  
-- Actions against kill chain 
+#### Intrusion Kill Chain
+
+- Kill chain phases
+ 1. Reconnaisance
+  - Research identification and selecting the targets
+  - Using crawling websites, mailing lists, social relationships etc.
+  > Petteri's comment: as an example OSINT aka Open Source Intelligence[^osint]
+ 2. Weaponization
+  - Remote acces trojan coupled with and exploit 
+  - In example corrupted Office files, pdfs etc.
+ 3. Delivery
+  - Delivering the weapon to the targeted environment
+  - email attachments, websites, USB removable media
+ 4. Exploitation
+  - Way of triggering the intruders' code
+ 5. Installation
+  - Remote access trojan or backdoor on the victim's system
+ 6. Command and Control (C2)
+  - APT malware requires usually manaul interaction bedore C2 channel is established. Once established, intruders have "hands on keyboard"
+ 7. Actions on objectives
+  - After all the previous phases can intruders achieve their objectives
+   - collecting, encrypting, extracting victim's data in the environment
+ 
+#### Courses of Action
+ 
+- Actions that can be used against every phase mentioned in the Intrusion Kill Chain
  1. Detect
  2. Deny
  3. Disrupt
@@ -27,6 +54,25 @@ School course repo: ICT Security Basics from Trust to Blockchain
  5. Deceive
  6. Destroy
  
+### MITRE ATT&CK 
+
+#### Tactic
+
+- The reason for performing adversarial actions. For example hackers may want to achieve credential access
+
+#### Techniques
+
+- The way adversaries achieve their objectives. 
+
+#### Procedure
+
+- How specifically adversarial actions are implemented. For example using sudoers file to elevate privileges.
+
+### Comparing Cyber Kill Chain and ATT&CK
+
+Both frameworks have similarities although MITRE ATT&CK has phased the adversary actions into more phases. But for example both have Reconnaissance and Command and Control. And many of the other elements are very similar as well.
+
+I believe ATT&CK as a more detailed overview is probably used in large enterprises or organizations like the military or other public sector organizations. Since it can be adopted as a tool for improving security and it has so much real-life information on malicious attacks, I think it may be the more comprehensive option.
 
 ### Summary of Darknet Diaries 
 
@@ -87,5 +133,7 @@ In Australia a disgruntled ex-employee was able to hack into local sewage system
 | Host OS | Windows10 |
 | Physical computer used | School laptop |
 
+[^summary]: https://lockheedmartin.com/content/dam/lockheed-martin/rms/documents/cyber/LM-White-Paper-Intel-Driven-Defense.pdf
+[^osint]: https://osintframework.com/
 [^scriptkids]: https://www.hypr.com/security-encyclopedia/script-kiddie
 [^scada]: https://en.wikipedia.org/wiki/SCADA
