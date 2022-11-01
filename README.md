@@ -99,7 +99,7 @@ July 12th Episode (between eps 120 and 121.. did not realize it was actually a g
 
 #### Aftermath
 
-*** It was finally revealed that Lapsu$ actually had not cracked into Okta's support engineer's account or network. Only two of the client's account. It was very limited ***
+***It was finally revealed that Lapsu$ actually had not cracked into Okta's support engineer's account or network. Only two of the client's account. It was very limited***
 
 - But the screenshots that the Lapsu$ provided (fake news about hacking) made a huge impact for Okta's reputation
   - How do you prepare yourself for these sort of attacks with little actual impact but huge impact if it is exaggerated to the public by the hackers wanting to become notorious
@@ -126,6 +126,13 @@ In Australia a disgruntled ex-employee was able to hack into local sewage system
 - After downloading I used the steps provided by the [teacher](https://terokarvinen.com/2021/install-debian-on-virtualbox/) to install debian
  - For some reason I had to do some minor changes in the step "Insert Debian ISO Image as a Virtual CDROM", that I think was because of Windows environment
 - You can check screenshots of the steps in the [pics folder](https://github.com/tumacell/ICT4HM103-3004/tree/homework1/pics)
+- As a final step I dowloaded and installed the updates for each outdated package and dependency on the system (took quite a while)
+ 
+ ´´´
+ su root
+ apt-get update
+ apt-get upgrade
+ ´´´
 
 ![This is an image of Debain final phase](/pics/debian14.JPG)
 
