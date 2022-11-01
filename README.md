@@ -31,48 +31,47 @@ School course repo: ICT Security Basics from Trust to Blockchain
 ### Summary of Darknet Diaries 
 
 July 12th Episode (between eps 120 and 121.. did not realize it was actually a guest episode. Highly recommend this in any case).
-> Lapsu$, IBM punch cards, Australian sewage problems....
+<sub> Lapsu$, IBM punch cards, Australian sewage problems.... </sub>
 
-Group of hackers had  infiltrated Okta security firm's network (or so it was first reported and alleged initially)
-Screenshots implicated that technical support engineer's account was compromised
---> in the worst case scenario hackers could change passwords, access restricted data etc.
+#### Case Lapsu$
+- Group of hackers had  infiltrated Okta security firm's network (or so it was first reported and alleged initially)
+- Screenshots posted by the hackers implicated that technical support engineer's account was compromised =>> in the worst case scenario hackers could change passwords, access restricted data etc.
 
-Okta's response:
+#### Okta's response:
 1. Figure out what was the technical impact
 2. Get in front of customers and explain what had happened
 
-Traced it back to hack of a third party vendor
-They had thought that they had already dealt with that scenario so at first they wanted to make sure their 
-conclusions of that incident originally were correct
---> they had caught illegal password, failed mfa etc. and Okta had responded 100% like they should, but still the hackers claimed to have hacked their website.
+- Okta traced the problem back to a hack of a third party vendor that they had thought they had already dealt with 
+- They revisited the case and came to the conclusion that Okta had responded 100% like they should, but still the hackers claimed to have hacked their website
 
-Lapsu$
-source-code Nvidia, Samsung etc.
+- Okta's team had been monitoring a hacker group called Lapsu$ 
+ - Lapsu$' way of doing things (targetting big enterprises and claiming reputations) indicated that Okta may be a target
+- Lapsu$ was very crafty and resourceful but seemed to be in the hacking business for the notoriety more than anything
+- When studying logs afterwards of the third party hacking Ls movement was unconventional --> they did not exactly know how to leverage the data they received 
+  - Another adversary may have been more methodical, but Ls strategy was adolescent
 
-Okta's team had been monitorign Lapsu$ and they had noticed them and came to the conclusion that their paths may cross
+#### Aftermath
 
-L was very crafty adn resourceful but seemed to be in the hacking business for the notoriety more than anything
+*** It was finally revealed that Lapsu$ actually had not cracked into Okta's support engineer's account or network. Only two of the client's account. It was very limited ***
 
-When studying logs afterwards of the third party hacking Ls movement was unconventional --> they did not exactly know how to leverage the data they received when 
-hacking in
-Another adversary may have been more methodical, but Ls strategy was adolescent
-They actually had not cracked into Okta's support engineer's account or network a single client's account. It was very limited
+- But the screenshots that the Lapsu$ provided (fake news about hacking) made a huge impact for Okta's reputation
+  - How do you prepare yourself for these sort of attacks with little actual impact but huge impact if it is exaggerated to the public by the hackers wanting to become notorious
 
-They wanted to be notorious and famous.
+- Lapsu$ hackers left a huge digital trail 
+- Their methods were more like that of script kiddies using social engineering, sim swapping rather than technical malware or coding skills.
 
-In the end they compromised two Okta accs.
-But the screenshots that the Lapsu$ provided (fake news about hacking) made a huge impact
-How do you prepare yourself for these sort of attack with little actual impact but huge impact if it is exaggerated to the public byt the hackers wanting to become notorious
-
-Lapsu$ hackers left a huge digital trail and seemed to be more script kiddies using social engineering, sim swapping rather than technical malware or coding skills.
---> teenagers
-
+#### Other topics
 
 The episode also went over an IBM related hacking story from the 60s when punch-cards were still in use when using the computers. 
 - Couple of school kids were able to figure out that changing one bit (adding one extra hole to a punch card) would disable rebooting the computer IBM were using at the time
 - As a joke they added dozens of cards to the management console 
-- As a result 
+- As a result the computers were not able to reboot and it took some time for the engineers to figure out the problem
+- One of the kids who was making the prank was interviewed for the podcast, he stated that he had not told IBM about the incident
+ - He received a job from IBM five years later after the incident
+
+In Australia a disgruntled ex-employee was able to hack into local sewage system using radio transmitters and their frequencies to acces pump stations remotely.
+- The ex-employee was caught during the act and was sentenced to 2 years in prison.
+- The sewage systems used SCADA[^1] which is not connected to the internet, but sincce the ex-employee knew the configurations and correct frequencies, he was able to do some damage anyway.
 
 
-Queensland sewage problems
-Hard to map out what was the problem because of sparratic occurences
+[^1] https://en.wikipedia.org/wiki/SCADA
