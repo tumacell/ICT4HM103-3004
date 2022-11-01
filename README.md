@@ -128,11 +128,11 @@ In Australia a disgruntled ex-employee was able to hack into local sewage system
 - You can check screenshots of the steps in the [pics folder](https://github.com/tumacell/ICT4HM103-3004/tree/homework1/pics)
 - As a final step I dowloaded and installed the updates for each outdated package and dependency on the system (took quite a while)
  
- ´´´
+ ```
  su root
  apt-get update
  apt-get upgrade
- ´´´
+ ```
 
 ![This is an image of Debain final phase](/pics/debian14.JPG)
 
