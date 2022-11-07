@@ -35,3 +35,5 @@ One-way hash function is easy to compute from pre-image but otehr way around (ge
 Hash function is public and the security comes from the one-wayness. A single bit change in pre-image, hanges half of the bits in hash value. Also if given a hash value, it is almost impossible to find a pre-image that hashes to that value.
 
 One way of understanding hash value is checking files between you and your friend. You want to find if your friend has the same files as you have. But you don't want them to send you anything. Asking for hash values and checking if they match will almost certainly verify that you have the same files.
+
+Message authentication code (MAC or DAC / data authentication code) is one-way hash function that has a secret key. Only someone with the key can verify the hash value. 
