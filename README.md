@@ -88,7 +88,18 @@ Simple! I sed the sources provided by itzgeek.com[^problem], although I tried to
 
 After that I was able to again follow the instructions.
 
-You can check out [proof of doing the work](/pics/)
+You can check out [proof of doing the work in picture format](/pics/).
+
+Some highlight for those who have to read through this:
+
+- Originally I had some trouble installing the necessary packages:
+![This is an image of problem when installing packages](/pics/hashcat1.JPG)
+- I had to check the correct distro I was on (Bullseye) and then add the repos to the /etc/apt/sources.list
+![This is an image of problem when installing packages2](/pics/hashcat2.JPG)
+- The first problem to officially solve was 21232f297a57a5a743894a0e4a801fc3 and the answer was admin
+![This is an image of solving hashes1](/pics/hashcat7.JPG)
+- The NTLM hash was solveable after using the hashid and then using the correct mode 1000 with the hashcat. The correct mode was displayed in the hashid phase.
+![This is an image of solving hashes2](/pics/hashcat10.JPG)
 
 
 [^linux]: https://linuxhandbook.com/chmod-command/
