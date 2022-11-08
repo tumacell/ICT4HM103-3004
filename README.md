@@ -88,6 +88,7 @@ Simple! I sed the sources provided by itzgeek.com[^problem], although I tried to
 
 After that I was able to again follow the instructions.
 
+You can check out [proof of doing the work](/pics/)
 
 
 [^linux]: https://linuxhandbook.com/chmod-command/
