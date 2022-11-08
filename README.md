@@ -65,7 +65,7 @@ Otherwise i really really like Linux.
 
 ## Cracking hashes and testing hashcat
 
-I followed the instructions provided by the teacher[^instructions] and was able to intall hashid, hashcat and wget. But I had to do a lot of trouble shooting!
+I followed the instructions provided by the teacher[^instructions] and was able to intall hashid, hashcat and wget. But I had to do a lot of trouble shooting (about 1,5hrs)!
 
 It turns out that when last week I installed the Debian 11 the OS installer set the DVD/ISO as the source for packages for mys system since I did not choose to scan for network mirrors.
 Therefore when I tried the command 
@@ -108,6 +108,10 @@ Some highlight for those who have to read through this:
 
 ![This is an image of solving hashes2](/pics/hashcat10.JPG)
 
+- I was not able to solve the d-assignment. For some reason the I got "token length exception" -error everytime. Unfortunately I had no time to de-bug this one any better. I think the slash in the middle may have something to do with this, but I am not sure.
+ - After these I tried solving the John the Ripper problem, but was not succesful. I was however able to find out that in the /etc/shadow -file the beginning of the hash $1$ would seem to be MD5. But still I only received error messages when trying to solve this one.
+
+It was interesting to learn a little bit about hashes and how to crack them. Unfortunately de-bugging and troubleshooting took so much time in the beginning that I was not able to fully do all the assignments (d-assignment). Maybe I will ge tback to these at a better time. 
 
 [^linux]: https://linuxhandbook.com/chmod-command/
 [^instructions]: https://terokarvinen.com/2022/cracking-passwords-with-hashcat/
