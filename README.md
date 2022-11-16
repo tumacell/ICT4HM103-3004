@@ -48,7 +48,7 @@ In modern cryptgraphy *keys* are used to solve the restricted algo problems.
 - Encryption key = public key
 - Decryption key = private key
 
-#### Computer Algorithms
+#### Computer Algorithms[^oreilly]
 
 **DES = Data Encryption Standard**
 
@@ -62,11 +62,11 @@ Most public-key algorithm. Can be used for encryption and digital signatures.
 
 Public-key algorithm. Only for digital signatures.
 
-#### Large Numbers
+#### Large Numbers[^oreilly]
 
 Cool chapter on the scale of these things when it comes to cryptography.
 
-#### Communications Using Public-Key Cryptography: from start to end of "Hybrid Cryptosystems"
+#### Communications Using Public-Key Cryptography: from start to end of "Hybrid Cryptosystems"[^oreilly]
 
 Symmetric algorithm = safe / vault. Anyone with the combination can open it. Someone who does not have the correct combination can not open it and has to blow it up some other way.
 
