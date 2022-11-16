@@ -112,4 +112,58 @@ This is pretty much the same process as the earlier example of person A and B se
 ### Encrypt and sign a message
 
 I started out by checking if I already had gpg installed on my Debian:
+
 ![GPG installed](/pics/gpg1.JPG)
+
+And it seemed to be already installed. SO next thing I did was try to check out some basic information form the manual using the command:
+
+```
+man gpg
+```
+
+![GPG manual](/pics/gpg2.JPG)
+
+After that I made a folder where I could practice this the same way I did last week. I did the same commands as were instructed in the Tips section (there was one mistake in the tips).
+
+```
+gpg --gen-key
+```
+
+After which I was prompted some basic information for the key and also the secret. First time I was too slow and the key was not generated.
+
+![GPG prompt](/pics/gpg3.JPG)
+
+I then did the fingerprint command 
+
+```
+gpg --fingerprint Petteri
+```
+
+I made a .txt -file to be encrypted with 
+```
+nano encryptfile.txt
+```
+
+and then I simply encrypted the file:
+
+![GPG encryptfirst](/pics/gpg7.JPG)
+
+The command was a little bit different than in the tips, since I could not get it to work. 
+
+```
+gpg -r petteri.vaskin@haaga-helia.fi -e encryptfile.txt
+```
+
+And next i decrypted the file with 
+
+```
+gpgp -d encryptfile.txt.gpg
+```
+
+And it was succesful! Although I forgot to sign the thing so I made another file calld 
+> encryptfile2
+firgetting the .txt, but it does not matter in this case!
+
+![GPG success](/pics/gpg8.JPG)
+
+And in the end it states that it has "good signature" signaling that this worked well.
