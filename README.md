@@ -1,15 +1,6 @@
 # ICT4HM103-3004
 School course repo: ICT Security Basics from Trust to Blockchain
 
-
-***
-## Choose correct branch for viewing the homework
-***
-
-For example homework1 for the first week's homework.
-
-![This is an instructional image](/pics/change_branch.JPG)
-
 ## Homework 3 Public key
 
 ### SChneier 2015 Applied Cryptography
@@ -72,3 +63,50 @@ Most public-key algorithm. Can be used for encryption and digital signatures.
 Public-key algorithm. Only for digital signatures.
 
 #### Large Numbers
+
+Cool chapter on the scale of these things when it comes to cryptography.
+
+#### Communications Using Public-Key Cryptography: from start to end of "Hybrid Cryptosystems"
+
+Symmetric algorithm = safe / vault. Anyone with the combination can open it. Someone who does not have the correct combination can not open it and has to blow it up some other way.
+
+Encrypting in the public-key way is easy the hard part is to decrypt messages. With current computational power it is almost impossible to get the private-key to decrypt messages or whatever it is encrypted.
+
+*Process:*
+
+- Person A and B agree on public-key cryptosystem
+- A sends B the public key
+- B encrypts a message using the public key and sends the encrypted message to A
+- A decrypts the message using the private key
+
+--> no prior arrangement are required, quick and easy
+
+This same method can be used among network users where public-keys are published in a database.
+
+**Hybrid Cryptosystems**
+
+Criticism towards public-key algorithms: not a substitute for symmetric algorithms. 
+Public-key algos are also slow, at least 1000 times slower than symmetric algorithms.
+PK algorithms are vulnerable to chosen-plaintext attack.
+
+#### Digital Signatures
+
+**Digital Signature Trees**
+
+Basic idea is a digital signature scheme based on secret-key cryptography that will produce an infinite number of one-time signatures using tree structure. The root is based on sume public file and authenticating it. Root then signs one message and authenticates the sub-nodes in the tree. Then each of these nodes sign one message and authenticates its sub-nodes.
+
+**Signing Documents with Public-Key Cryptography**
+
+This is pretty much the same process as the earlier example of person A and B sending encrypted messages and using the public key / private key.
+
+- A encrypts a document with her private key -> signs the document
+- B receives the signed document
+- B decrypts the document with A's public key -> verification of the signature
+
+1. The signature is authentic when message is decrypted with the public key.
+2. Signature can't be forged
+3. Signature can't be reused or transferred to any other document
+4. Signed document can't be modified. If it is modified, then the same key is no longer valid
+5. Signature can't repudiated.
+
+
