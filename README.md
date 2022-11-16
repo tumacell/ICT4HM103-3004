@@ -109,6 +109,34 @@ This is pretty much the same process as the earlier example of person A and B se
 4. Signed document can't be modified. If it is modified, then the same key is no longer valid
 5. Signature can't repudiated.
 
+### Two examples of public key cryptography
+
+**Digital Signature Standard**[^dss],[^dss2]
+
+- Way of authenticating the data from trusted source
+- In DSS approach a hash code is generated out of the message and inputs are given to the sign function
+ - hash code
+ - random number for the signature
+ - private key of the sender
+ - global public key
+
+Receiver will then verificate with a verification function with inputs
+- Hash code made by the receiver
+- signature components (s and r)
+- public key sender
+- global public key
+
+The output of the function is compared with signature component 'r'. Both values should match if the sent signature is valid.
+
+**Elliptic-curve cryptography**[^ecc]
+
+- ECC is one of the most powerful types of cryptography in use today
+- Next-gen public-key cryptography, making it a lot more safer than older systems like RSA
+- If you can compute how much energy is needed to break a cryptogrpahic algorithm and than transfrom that to how much water would that amount of energy boil:
+ - 228-bit RSA key: less energy than boiling a teaspoon of water
+ - 228-nit EC-key: enough energy to boil all the water on earth 
+
+
 ### Encrypt and sign a message
 
 I started out by checking if I already had gpg installed on my Debian:
@@ -161,9 +189,15 @@ gpgp -d encryptfile.txt.gpg
 ```
 
 And it was succesful! Although I forgot to sign the thing so I made another file calld 
+
 > encryptfile2
-firgetting the .txt, but it does not matter in this case!
+
+forgetting the .txt, but it does not matter in this case!
 
 ![GPG success](/pics/gpg8.JPG)
 
 And in the end it states that it has "good signature" signaling that this worked well.
+
+[^dss]: https://www.geeksforgeeks.org/digital-signature-standard-dss/
+[^dss2]: https://usemynotes.com/what-is-digital-signature-standard/
+[^ecc]: https://blog.cloudflare.com/a-relatively-easy-to-understand-primer-on-elliptic-curve-cryptography/
