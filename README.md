@@ -5,26 +5,26 @@ School course repo: ICT Security Basics from Trust to Blockchain
 
 ### SChneier 2015 Applied Cryptography
 
-#### Terminology
+#### Terminology[^oreilly]
 
 **Sender and receiver**
 
 **Messages and Encryption**
 
-A *cleartext* message or a *plaintext* message can be disguised or its substance can be hidden via *encryption*. This disguised message is called *ciphertext* that can be turned in to plaintext via *decryption*. A message (M) can be a stream of digitized voice, video, image or w/e. Ciphertext (C) is also binary data and around the same size as the plaintext, if it is compressed it is smaller. The functionality of encryption in mathematical notation is 
+A *cleartext* message or a *plaintext* message can be disguised via *encryption*. This disguised message is called *ciphertext* that can be turned into plaintext via *decryption*. A message (M) can be a stream of digitized voice, video, image or w/e. Ciphertext (C) is also binary data and around the same size as the plaintext, if it is compressed it is smaller. The functionality of encryption in mathematical notation is 
 
 >E(M) = C
 
 Messages can be kept secure using *cryptography* by *cryptographers*. There is also people who do *cryptanalysis* (cryptanalysts). The branch of calculus including cryptography and cryptanalysis is *cryptology*.
 
-Decryption (D) as a process is done to ciphertext so the notation:
+Decryption (D) as a process is done to ciphertext so the notation in mathematical terms is:
 
 >D(C) = M
 
 **Authentication, Integrity and Nonrepudiation** 
 
-*Authentication* is there so that the receiver of a message can be certain that the sender is who they say they are and that the origin is authenticated. 
-*Integrity* in a message means that it has not been altered by an outside element.
+*Authentication* is functionality where the receiver of a message can be certain that the sender is who they say they are --> message is authenticated. 
+*Integrity* in a message means that it has not been altered by an outside element and the message when decrypted is the same as when it was originally.
 *Nonrepudiation* means that a sender can not afterwards deny that they have sent a message.
 
 **Algorithms and Keys**
@@ -89,7 +89,7 @@ Criticism towards public-key algorithms: not a substitute for symmetric algorith
 Public-key algos are also slow, at least 1000 times slower than symmetric algorithms.
 PK algorithms are vulnerable to chosen-plaintext attack.
 
-#### Digital Signatures
+#### Digital Signatures[^oreilly]
 
 **Digital Signature Trees**
 
@@ -137,7 +137,7 @@ The output of the function is compared with signature component 'r'. Both values
  - 228-nit EC-key: enough energy to boil all the water on earth 
 
 
-### Encrypt and sign a message
+### Encrypt and sign a message[^tero]
 
 I started out by checking if I already had gpg installed on my Debian:
 
@@ -201,3 +201,5 @@ And in the end it states that it has "good signature" signaling that this worked
 [^dss]: https://www.geeksforgeeks.org/digital-signature-standard-dss/
 [^dss2]: https://usemynotes.com/what-is-digital-signature-standard/
 [^ecc]: https://blog.cloudflare.com/a-relatively-easy-to-understand-primer-on-elliptic-curve-cryptography/
+[^oreilly]: https://learning.oreilly.com/library/view/applied-cryptography-protocols/9781119096726/10_chap02.html#chap02-sec006
+[^tero]: https://terokarvinen.com/2022/trust-to-blockchain-2022-autumn/
