@@ -109,4 +109,7 @@ This is pretty much the same process as the earlier example of person A and B se
 4. Signed document can't be modified. If it is modified, then the same key is no longer valid
 5. Signature can't repudiated.
 
+### Encrypt and sign a message
 
+I started out by checking if I already had gpg installed on my Debian:
+![GPG installed](/pics/gpg1.JPG)
