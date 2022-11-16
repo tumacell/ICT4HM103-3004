@@ -70,7 +70,7 @@ Cool chapter on the scale of these things when it comes to cryptography.
 
 Symmetric algorithm = safe / vault. Anyone with the combination can open it. Someone who does not have the correct combination can not open it and has to blow it up some other way.
 
-Encrypting in the public-key way is easy the hard part is to decrypt messages. With current computational power it is almost impossible to get the private-key to decrypt messages or whatever it is encrypted.
+Encrypting in the public-key way is easy, the hard part is to decrypt messages. With current computational power it is almost impossible to get the private-key to decrypt messages or whatever it is encrypted.
 
 *Process:*
 
@@ -79,7 +79,7 @@ Encrypting in the public-key way is easy the hard part is to decrypt messages. W
 - B encrypts a message using the public key and sends the encrypted message to A
 - A decrypts the message using the private key
 
---> no prior arrangement are required, quick and easy
+--> no prior arrangement required, quick and easy
 
 This same method can be used among network users where public-keys are published in a database.
 
@@ -93,7 +93,7 @@ PK algorithms are vulnerable to chosen-plaintext attack.
 
 **Digital Signature Trees**
 
-Basic idea is a digital signature scheme based on secret-key cryptography that will produce an infinite number of one-time signatures using tree structure. The root is based on sume public file and authenticating it. Root then signs one message and authenticates the sub-nodes in the tree. Then each of these nodes sign one message and authenticates its sub-nodes.
+Basic idea is that a digital signature scheme is based on secret-key cryptography that will produce an infinite number of one-time signatures using tree structure. The root is based on sume public file and authenticating it. Root then signs one message and authenticates the sub-nodes in the tree. Then each of these nodes sign one message and authenticates its sub-nodes.
 
 **Signing Documents with Public-Key Cryptography**
 
