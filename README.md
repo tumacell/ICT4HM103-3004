@@ -43,7 +43,7 @@ Bitcoin network runs as follow (direct quote from the whitepaper)
 - Nodes accept the block only if all transactions in it are valid and not already spent.
 - Nodes express their acceptance of the block by working on creating the next block in the chain, using the hash of the accepted block as the previous hash.
  
-#### Felten et al 2015: Bitcoin and Cryptocurrency Technologies
+#### Felten et al 2015: Bitcoin and Cryptocurrency Technologies[^coursera]
 
 **Hash functions**
 - take any string as input
@@ -135,3 +135,4 @@ The security aspects are the chain mechanism (if you tamper with one block, you 
 [^doge]: https://virtuaalivaluutta.com/dogecoin/
 [^blockchain]: https://terokarvinen.com/2022/trust-to-blockchain-2022-autumn/
 [^blockchain2]: https://builtin.com/blockchain
+[^coursera]: https://www.coursera.org/learn/cryptocurrency/home/week/1
