@@ -56,21 +56,26 @@ As security properties:
 - puzzle-friendly
 
 *Collision free* 
+
 Means that input of x and y when hashed should not have the same output. There is some collision in some cases, because there are motr possible inputs than outputs.  
 But the key question is that no one should be able to find a collision. The odds of someone finding a collision is not really attainable.
 
 Recognizing if files are the same --> simple way of doing this is to compare their hashes. If we believe to the thesis that there are very few possible collisions then this should be a surefire way of making sure that two files, strings, w/e are the same.
 
 *Hiding*
+
 There should be a way to hash values x ín a way that you can't really find the original input. This however is not the case because given two options for the input it is easy to reverse a hash. But if the x hash is concatenated with another values hash then the original input is truly well hidden.
 
 *Puzzle-friendly*
+
 If someone wanted to target the hash function if they want to come out to output y if there is part of the input that is chosen to be part of the input, then it is very hard to compute the original input value. 
 
 **Hash pointers**
+
 Hash pointer is a point where infomration is stored and also hash of the info. With that pointer one can verify that the included information has not changed. Hash pointers are also there for security. If an adversary wants to attack a blockchain, they will need to change the hash pointers all the way to match the hash values --> simple data change at the low-level will inflyunece the whole chain.
 
 **Digital Signatures**
+
 Digital form signature which can only be made by the author, but anyone can verify it. It is document related and cannot be copied to another document since it also implies that YOU are authorizing that particular piece of document.
 Three parts for digital signatures:
 - Generate keys (keysize) (secret key for signing, public key for verification)
@@ -78,6 +83,7 @@ Three parts for digital signatures:
 - Verify (public key, message, signature)
 
 **Public Keys as Identities**
+
 Public keys can  be used as identity since you are the only one who knows the secret key. 
 In a decentralized identity management anyone can make identities any time they want and there is no centralized oversight of identities.
 Also known as "addresses" in BTC.
@@ -89,16 +95,19 @@ Using the Yahoo Finance summaries[^yahoo] it seems that on very long timeline Bi
 On the other hand there have been some major drops earlier in BTC history[^returns]: 2014: -58%, 2018: -73%. Overall investments are definitely positive (2011: +1473%, 2013: 5507%, 2017: 1331%), but we shall see if the road is negative from here on out. 
 
 #### Not BitCoin[^kryptofi]
+
 Altcoins are basically any other cryptocurrency other than Bitcoin (BTC). The term comes from "alternative coin".
 There are a number of different altcoins like Ethereum, dogecoin and cardano for example.
 
 **Ethereum**[^ethereum]
+
 Ethereum is the best known and has been most popular alt coin and a competitor for Bitcoin. 
 Ethereum as a cryptocurrency is a bit more versatile than Bitcoin and many other tokens or coins have been built on top of Ethereum network. It is an ecosystem for nearly 90% of other tokens (Chainlink, Aave and so on) and more comparable for an operating system. It is also a platform where you can build distributed applications (dApps) and smart contracts[^ethereum]. 
 
 The criticism against Ethereum has been that it uses a lot of energy when mining and also when using transactions.
 
 **Dogecoin**[^doge]
+
 A memecoin made as a joke and first published in Reddit forums. It is perhaps best known for being pumped up in value by Elon Musk. The idea behind the Dogecoin is that there is and independent and "fun" payment method. The coin icon is a shiba inu dog.
 
 There were many fas moving valuations where the value of the coin went up ~300% in couple of days and then came down 50% in one single slash the next day.
@@ -106,6 +115,7 @@ There were many fas moving valuations where the value of the coin went up ~300% 
 Dogecoin is not better (or worse?) than Bitcoin and it really does not have any particular value or purpose, other than being a memecoin or a joke.
 
 #### What's a block chain?[^blockchain],[^blockchain2]
+
 Blockchain is a system that records any sort of information in a way that makes it extremely hard / impossible to change, hack or cheat the blockchain. It is also known as distributed ledger technology[^blockchain].
 
 You can think of blockchain throug more everyday example such as Google Docs. When you create a Google Docs and share it with other collaborators the document is not copied with each participant, rather it is distributed. Decentralized distribution chain then gives access to participants at the same time so they can alter the document. All the changes and modifications are recorded at the same time and in a transparent way. As a difference original data on the blockchain can't be modified making it secure.
