@@ -3,8 +3,10 @@ School course repo: ICT Security Basics from Trust to Blockchain
 
 
 ***
-## Choose correct branch for viewing the homework
+## Homework 5[^tero]
 ***
+
+
 
 ### Felten et al 2015: Bitcoin and Cryptocurrency Technologies, videos Week 2
 
@@ -30,7 +32,7 @@ Decentralization questions regarding BTC:
 - Updates to software
  - developers have a lot of power
 
-#### Distributed consensus
+#### Distributed consensus[^coursera]
 
 Distributed consensus is a key technical challenge of decentralized electronic cash.
 
@@ -47,6 +49,33 @@ When these transactions occur in the network, there needs to be a consensus on w
 - All nodes have a sequence of blocks of transactions that they've reached consensus on
 - Each node has a set of outstanding transactions that has been broadcast to it
 
+#### Consensus without identity: the Block Chain[^coursera]
+
+in this section it is explained basically how the blockchain system works in a P2P network and what are the security dimensions in it. This section is basically revision in a more technical level of previous week's lecture.
+
+BTC nodes do not have identities because identity is hard in a P2P system and pseudonmity is a goal of BTC. There is no central identifier in P2P system. 
+
+In a simplified consensus algorithm new transactions are broadcast to everyone. New transavtions are collected into a block and each round a random node gets to broadcast its block. When that happens other nodes will accept it, assuming all transactions in it are valid (no double spending!) and as a sign of acceptance nodes will include the accepted block's hash in the next block they create.
+
+Confirmation process is a key factor in blockchain security. For example double-spend probability decreases exponentially with number of confirmations. Nodes will as a rule (honest ones at leas) extend the longest valid branch.
+
+#### Incentives and Proof of Work
+
+When money is involved, can we give nodes incentives for behaving honestly? Or can we penalize dishonest nodes?
+
+Incentive examples: block reward, only received if you are in the long-term consensus branch
+1. creator of block gets to include special coin-creation transaction in the block and choose recipient address of the transaction
+ - currently 25BTC
+2. Creator of transaction can choose to make output less than input value -> remainder goes to block creator
+
+Remaining issues are how do you prevent Sybil attacks (invalid nodes to the network), pick random node or avoid free-for-all due to incentives and rewards?
+
+Instead of randomly picking a node we select a node in proportion to a resource that should not be mopolized:
+- in proportion to computing power: proof-of-work
+- in proportion to ownership: proof-of-stake
+
+This can be achieved using a nonce  that is included in the blockchain amlong previous block's hash and transactions. So mining means that you are trying to repeatedly solve this nonce and then you get block. The difficulty is changing according to the mining ecosystem around the globe -> more miners the harder the targets can be.
+
 #### Detective Coinbit[^bitquery],[^bitstamp]
 
 Blockchain will keep the record of every transaction ever to have happened in the network. And the are available for everyone to see. You have to know which currency is used in the transaction in order to get insight into that spesific transaction.
@@ -55,7 +84,8 @@ The transactions contain transaction data, the amount of currency transferres, t
 
 As an example here is a pretty hefty transaction for viewing pleasure: https://www.blockchain.com/btc/tx/671b368ba310d7dca7308f8e31b12fd4ad9b0bae699e3ed13792d49cec5269f1 
 
-TÄHÄN LISÄÄ VIELÄ KUVAT!
+![Exchange](./pics/exchange.JPG)
+![Exchange2](./pics/exchange2.JPG)
 
 #### Dashboard of Doom[^dashboard]
 
@@ -71,9 +101,7 @@ As stated by Mikko Hirvelä in the previous week's lecture there are many factor
  Mining is a good although a really expensive hobby. You can obviously learn a lot about not only blockchains and hash rates. but also about building stuff with your own hands, estimating the risk-reward and estimating the profits in a long term. I think that there is always a chance that cryptocurrencies will make a comeback and everything you spend now on mining may come back in the future. But there are constantly so many news and articles and talk about how cryptocurrencies are not very good for the environment or how they seem like tech-bro jargon that it may take a long time. Or it may take a different approach entirely to the blockchain technology.
 
 
-
-
-
+[^tero]: https://terokarvinen.com/2022/trust-to-blockchain-2022-autumn/
 [^coursera]: https://www.coursera.org/learn/cryptocurrency/lecture/At1IC/distributed-consensus
 [^bitquery]: https://bitquery.io/blog/bitcoin-analysis
 [^bitstamp]: https://www.bitstamp.net/learn/blockchain/where-to-track-cryptocurrency-transactions/
