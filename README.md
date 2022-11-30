@@ -98,7 +98,7 @@ As stated by Mikko Hirvelä in the previous week's lecture there are many factor
  - Considering the electirc costs, cost of good GPUs etc. the profits are very low and the profits are based on a long-term expectations rather than get-rich-quick expectations.
 
  My personal estimate of mining now and in the future:
- Mining is a good although a really expensive hobby. You can obviously learn a lot about not only blockchains and hash rates. but also about building stuff with your own hands, estimating the risk-reward and estimating the profits in a long term. I think that there is always a chance that cryptocurrencies will make a comeback and everything you spend now on mining may come back in the future. But there are constantly so many news and articles and talk about how cryptocurrencies are not very good for the environment or how they seem like tech-bro jargon that it may take a long time. Or it may take a different approach entirely to the blockchain technology.
+ Mining is a good although a really expensive hobby. You can obviously learn a lot about not only blockchains and hash rates. but also about building stuff with your own hands, estimating the risk-reward and estimating the profits in a long term. I think that there is always a chance that cryptocurrencies will make a comeback and everything you spend now on mining may come back in the future. But there are constantly so many news and articles and talk about how cryptocurrencies are not very good for the environment or how they seem like tech-bro jargon that it may take a long time. 
 
 
 [^tero]: https://terokarvinen.com/2022/trust-to-blockchain-2022-autumn/
