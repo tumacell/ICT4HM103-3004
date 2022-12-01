@@ -40,7 +40,7 @@ Distributed consensus is a key technical challenge of decentralized electronic c
 
 Distributed key-value store enables alredy in-use applications such as DNS (domain name system), public key directory, stock trades.
 
-**Theres a fixed # of nodes / processes and each of these has some input value. Then consensus protocol happens meaning that the protocol terminates and alld correct nodes decide on the same value and that value must be proposd by some correct node. Some of the node migth be faulty =/= correct node.**
+**Theres a fixed # of nodes / processes and each of these has some input value. Then consensus protocol happens meaning that the protocol terminates and all correct nodes decide on the same value and that value must be proposed by some correct (real) node. Some of the nodes migth be faulty =/= correct node.**
 
 When I pay money to my friend in BTC, I will broadcast the transaction to all the BTC nodes. 
 The block is signed by me and it includes my friend's public key and a hash pointer. And this is broadcast to every node. My friend does not need to have a node on the network, the BTC will be their's regardless.
