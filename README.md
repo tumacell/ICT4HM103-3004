@@ -40,7 +40,7 @@ There are methods to try to find out criminals' IP addresses. For example if I a
 
 ### Installing TOR browser
 
-![installing tor](/pics/tor1.JPG | width=100)
+![installing tor](/pics/tor1.JPG)
 
 
 
