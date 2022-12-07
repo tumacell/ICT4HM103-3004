@@ -1,16 +1,6 @@
 # ICT4HM103-3004
 School course repo: ICT Security Basics from Trust to Blockchain
 
-
-***
-## Choose correct branch for viewing the homework
-***
-
-For example homework1 for the first week's homework.
-
-![This is an instructional image](/pics/change_branch.JPG)
-
-
 ## Homework 6
 
 ### Shavers & Bair 2016: Hiding Behind the Keyboard: The Tor Browser[^torbook]
@@ -40,8 +30,47 @@ There are methods to try to find out criminals' IP addresses. For example if I a
 
 ### Installing TOR browser
 
+Installing Tor for windows10 was very easy. I just downloaded according to the instructions[^instructions] from https://www.torproject.org/download/ the windows version. And then installed the browser.
+
+I roleplayed someone who is not at all familiar with computers (surprisingly easy :( ) and still was able to use the browser fine.
+
+Installing the browser: 
+
 ![installing tor](/pics/tor1.JPG)
 
+I put the settings so that it always connects to the Tor network automatically:
 
+![installing tor](/pics/tor4.JPG)
+
+From about tor (in the browser) I was able to connect to .onion version of duckduckgo
+
+![installing tor](/pics/tor6.JPG)
+
+![installing tor](/pics/tor7.JPG)
+
+![installing tor](/pics/tor8.JPG)
+
+### Browsing the Tor  network
+
+I did not understand this part of the assignment. I thought regular browsing with Tor browser was clunky and not very user-friendly. The browser crashed multiple times and I was not able to achieve all taht much using it during a very short period of time. I will probably stay using Firefox at least for now. It was however interesting to see how the circuits changed periodically.
+
+![installing tor](/pics/tor9.JPG)
+
+### How does anonymity work in TOR?[^torsite], [^torwork]
+
+Most of the questions were answered in the section How the Onion browser works. T
+
+>Tor uses a variety of different keys, with three goals in mind: 1) encryption to ensure privacy of data within the Tor network, 2) authentication so clients know they're talking to the relays they meant to talk to, and 3) signatures to make sure all clients know the same set of relays. All the connections in Tor use TLS link encryption[^torsite]
+
+Tor is not completely decentralized, but the idea is somewhat similar. In the first phase of this assignment I explained how sending a message in Tor works: how the different nodes peel encryption layers and how the final or exit node knows the message and where it's finally going, but does not know the origin. Sending banck a message is kind of similar: message is sent to the predecessors without knowing the whole chain and only knowing the one needed step. And in the return Tor adds again the layers of encryption in every step. And lastly the original node receives a fully encrypted response (like go to Facebook for example --> Facebook respond). And because the orgin node has both keys to decrypt the message it can understands the mssage.[^torwork] 
+
+### What kind of the treath models could TOR fit?[^instructions]
+
+This part of the assignment I was not able to answer. I read a couple of forum posts in stackexchange.com[^threat1] and int torprojects gitlab[^threat2]. Admittedly I ran out of time this time around.
 
 [^torbook]: Shavers & Bair 2016: Hiding Behind the Keyboard: The Tor Browser
+[^torsite]: https://support.torproject.org/about/key-management/
+[^torwork]: https://medium.com/hackernoon/how-does-tor-really-work-c3242844e11f
+[^instructions]: https://terokarvinen.com/2022/trust-to-blockchain-2022-autumn/
+[^threat1]: https://tor.stackexchange.com/questions/27/how-does-tors-threat-model-differ-from-i2ps-threat-model
+[^threat2]: https://gitlab.torproject.org/legacy/trac/-/wikis/doc/UserThreatModels
