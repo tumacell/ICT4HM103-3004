@@ -1,16 +1,6 @@
 # ICT4HM103-3004
 School course repo: ICT Security Basics from Trust to Blockchain
 
-
-***
-## Choose correct branch for viewing the homework
-***
-
-For example homework1 for the first week's homework.
-
-![This is an instructional image](/pics/change_branch.JPG)
-
-
 ### Homework 7[^tero]
 
 
@@ -94,9 +84,68 @@ The lecturer show some real-life examples of corrupted elasticsearch and mongodb
 
 Strafer was designed to detect ransomware in the elasticsearch DBs and Enfilade in monodb DBs.
 
+#### Conclusions
+
+Ransomware attacks are causing serious disruptions and need to be handled proactively. Cloud databases need to be regularly assessed from security point-of-view. You should utilize ML/AI models to detect anomalies and use hardened sec configs. You can use open-source tools to detect exposed db network services. Kepp the patches updated to avoid exploitation.
+
 Enfilade and Strafer python based software. 
-![Enfilade](/pics/db3.JPG)[^ransomware]
-![Strafer](/pics/db4.JPG)[^ransomware]
+![Enfilade](/pics/db3.JPG) [^ransomware]
+![Strafer](/pics/db4.JPG) [^ransomware]
+
+
+### Attacking Modern SaaS Companies[^saas]
+
+This presentation was presented at *NolaCon 2017* on May 19th 2017 by Sean Cassidy.
+
+SaaS is Software As A Service: Gmail, Salesforce, M365. Exponential growth since 2008.
+
+> In 10 years there will be 3 major operating systems: AWS, GCP and Azure - Dino A. Dai Zovi
+
+The lecrueer states that if an attacker gets access to a developer's laptop / build server / artifact server / config management / DB... / Anything, they will basically get access to everything.
+
+How Saas development differs from others?
+- Fast iterative development cycles of days or weeks rather than months // Linchpin servers (very strict and specific roles with these servers)
+- Lots of automation // Usually not a lot of security monitoring
+- Emopowered engineers with lots of credentials // No security strategy or planning
+- Lots of new powerful tools // You can use those tools for bad things
+- Lack of security culture // Little to no budget for security
+
+![pipeline](/pics/saas1.JPG) [^saas]
+
+CI pipeline
+- Buil is triggered
+- Source code is downloaded
+- Source code is compiled
+- Tests are run
+- Software is packaged
+- Uploaded to artifact server
+
+- So if you run your attack code on Jenkins which is used in CI pipeline -> maybe for mining BTC
+
+![pipelinehack](/pics/saas2.JPG) [^saas]
+
+Basically if you are able to access jenkins then you have Read and Write access to the source code, credentials, secrets etc. 
+
+Using containers especially in web development and other sw development includes several security tradeoffs:
+- Easy patching
+- Fits microservices very well
+- Easy to automate building and deployment
+- Containers are *not* security barrier
+- Biggest danger is that they are fairly new
+
+So when Kubernetes automates deployment of containers you can bypass SSH bastion host / fw 
+    kubectl exec -ti pod-name /bin/bash
+
+It is a convenient feature of Kubernetes that you need to be vary of!
+
+Microservices
+
+Cloud logs
+
+The lecturer gave a very good source for figuring out kubernetes https://www.cncf.io/phippy/the-childrens-illustrated-guide-to-kubernetes/
+
+
 
 [^tero]: https://terokarvinen.com/2022/trust-to-blockchain-2022-autumn/
 [^ransomwaredb]: https://infocondb.org/con/hope/a-new-hope/combating-ransom-war-evolving-landscape-of-ransomware-infections-in-cloud-databases
+[^saas]: https://infocondb.org/con/nolacon/nolacon-2017/attacking-modern-saas-companies
