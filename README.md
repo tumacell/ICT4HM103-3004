@@ -138,11 +138,16 @@ So when Kubernetes automates deployment of containers you can bypass SSH bastion
 
 It is a convenient feature of Kubernetes that you need to be vary of!
 
-Microservices
+Microservices are opposite of monolithic software. They are usually pieces that center around a business area. For example in a TODO list there could be a TODO service. They usually communicate via REST API (HTTPS) and JSON. They make development easier since you don't have to know the whole code base --> services can remain up partially even when something goes wrong in another service. On the other hand services tend to have complex interaction between each other. This complexity makes it possible to exploit potential security issues like service-to-service authentication.
+
+It is important to focus on securing the APIs by for example not using too verbose URLs like todo-list-service.production.example.com because then an attacker can figure out other environments from the URL. Developers should be knowledgeable that every address / URL they make for the API advertises to outsiders what you are able to do with the application. 
 
 Cloud logs
 
-The lecturer gave a very good source for figuring out kubernetes https://www.cncf.io/phippy/the-childrens-illustrated-guide-to-kubernetes/
+
+
+
+>The lecturer gave a very good source for figuring out kubernetes https://www.cncf.io/phippy/the-childrens-illustrated-guide-to-kubernetes/
 
 
 
