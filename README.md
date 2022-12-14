@@ -142,10 +142,9 @@ Microservices are opposite of monolithic software. They are usually pieces that 
 
 It is important to focus on securing the APIs by for example not using too verbose URLs like todo-list-service.production.example.com because then an attacker can figure out other environments from the URL. Developers should be knowledgeable that every address / URL they make for the API advertises to outsiders what you are able to do with the application. 
 
-Cloud logs
+Cloud 
 
-
-
+For example access keys can be handled carelessly and ops teams / development teams can have very wide permissions. Sometimes developers make mistakses and actually push keys to the source code. When they notice the mistake they revert the commit, which does not delete the original commit rather only reverts it and an attacker can look for those secret keys. 
 
 >The lecturer gave a very good source for figuring out kubernetes https://www.cncf.io/phippy/the-childrens-illustrated-guide-to-kubernetes/
 
