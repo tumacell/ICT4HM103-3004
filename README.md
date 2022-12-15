@@ -4,7 +4,7 @@ School course repo: ICT Security Basics from Trust to Blockchain
 ### Homework 7[^tero]
 
 
-### Combating "Ransom-War:" Evolving Landscape of Ransomware Infections in Cloud Databases[^ransomwaredb]
+### Combating "Ransom-Ware:" Evolving Landscape of Ransomware Infections in Cloud Databases[^ransomwaredb]
 
 This presentation was presented at *A New HOPE (2022)* on July 23rd 2022 by Aditya K. Sood.
 
@@ -20,7 +20,7 @@ The presentation's agenda was:
 
 #### Modern application architecture
 
-As an overview in modern app development there a DevOps pipeline with code and code pipeline that are part of the CI/CD (continuous integration and coninuous delivery) pipeline. Then you have different networking elements for infrastructure, security and application. And this all "lives" in a (cloud) platform where there is also the most important part - the database. 
+As an overview in modern app development there is  a DevOps pipeline with code and code pipeline that are part of the CI/CD (continuous integration and coninuous delivery) pipeline. In addition you have different networking elements for infrastructure, security and application. And this all "lives" in a (cloud) platform where there is also the most important part - the database. 
 
 The database is money. That is where the data is so naturally that is where your attackers will try to attack!
 
@@ -37,7 +37,7 @@ Non-relational:
 - *Elasticsearch*
 - Cassandra
 
-Based on your choise the way attackers are chasing after the data changes as well. So you have to prepare based on your specific needs to an attack and build threat models based on that. For example if you have some of the data in a private cloud and some of the data in public cloud. 
+Based on your choise as developer the way attackers are attacking the data changes as well. So you have to prepare based on your specific needs to an attack and build threat models based on that. For example if you have some of the data in a private cloud and some of the data in public cloud. 
 
 #### Threats against cloud databases
 
@@ -65,10 +65,10 @@ File integrity monitoring:
  - increase in rename of file on the disks
  - files with unknown file extensions
 
-Scannin cloud DB
+Scanning cloud DB
  - Checking potential ransom messages
  - Listing encrypted collections in non-sql DBs (document based)
- - Crreated DBs with suspicious behavior
+ - Created DBs with suspicious behavior
 
 Outbound connectivity
  - Data exfiltration from compromised systems
